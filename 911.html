@@ -1,0 +1,131 @@
+<html>
+
+<head>
+   <title>Porsche 911 Gt3 Rs</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="911.css">
+</head>
+
+<body>
+
+   <div class="menu">
+      <nav class="nav" id="myNav">
+         <!-- logo y nombre -->
+         <img src="icono.png" class="nav_logo" alt="Logo de Elite">
+
+         <h1 class="nav_titulo">Elite Motors</h1>
+
+         <!-- menu -->
+         <a href="#menu" class="nav_target">
+
+            <!-- x del menu  -->
+
+            <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6"
+               fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+               <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                  <animate dur="0.2s" attributeName="d"
+                     values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                     begin="start.begin" />
+                  <animate dur="0.2s" attributeName="d"
+                     values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                     begin="reverse.begin" />
+               </path>
+               <rect width="10" height="10" stroke="none">
+                  <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+               </rect>
+               <rect width="10" height="10" stroke="none">
+                  <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                  <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+               </rect>
+            </svg>
+         </a>
+         <!-- enlaces a las partes de la pag -->
+         <div class="nav_links" id="menu">
+            <a href="Pag Parical.html" class="nav_link">Inicio<span></span></a>
+            <a href="catalogo.html" target="_blank" class="nav_link">Modelos<span></span></a>
+            <a href="contactanos.html" target="_blank" class="nav_link">Contáctanos<span></span></a>
+         </div>
+   </div>
+
+   <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+      <div id="slides">
+         <div id="overflow">
+            <div class="inner">
+               <div class="slide slide_1">
+                  <div class="slide-content">
+                     <img src="9111.jpg">
+                  </div>
+               </div>
+               <div class="slide slide_2">
+                  <div class="slide-content">
+                     <img src="9112.jpg">
+                  </div>
+               </div>
+               <div class="slide slide_3">
+                  <div class="slide-content">
+                     <img src="9113.jpg">
+                  </div>
+               </div>
+               <div class="slide slide_4">
+                  <div class="slide-content">
+                     <img src="9114.jpg">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="controls">
+         <label for="slide1"></label>
+         <label for="slide2"></label>
+         <label for="slide3"></label>
+         <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+         <label for="slide1"></label>
+         <label for="slide2"></label>
+         <label for="slide3"></label>
+         <label for="slide4"></label>
+      </div>
+   </div>
+   </div>
+
+   <div id="info-box">
+      <div class="info">
+         <div class="feature">CV: 520</div>
+         <div class="feature">Largo: 4.5m</div>
+         <div class="feature">Ancho: 1.8m</div>
+         <div class="feature">Motor: Boxer 6c</div>
+         <div class="feature">Velocidad Máxima: 312 km/h</div>
+         <div class="feature">0-100 km/h: 3.1s</div>
+      </div>
+   </div>
+
+   <div id="description-box">
+      <div id="description">
+         <h2>Porsche 911 Gt3 Rs</h2>
+         <p1>El Porsche 911 GT3 RS es un automóvil que encarna la esencia de la pasión por la conducción deportiva</p1>
+         <p2>Es una obra maestra diseñada para los entusiastas más exigentes, una verdadera maravilla de la ingeniería y
+            la velocidad</p2>
+         <p3>Desde el momento en que pones un pie en el acelerador, sientes la adrenalina correr por tus venas. </p3>
+         <p4>Bajo el capó, encontrarás un motor bóxer de seis cilindros de alto rendimientoLa precisión de su dirección
+            y la suspensión</p4>
+         <p5>ajustada te permiten tomar las curvas con una confianza inquebrantable. En su interior, la artesanía de
+            Porsche brilla </p5>
+         <p6>con materiales de alta calidad y acabados refinados. Pensado para ofrecer una experiencia de conducción
+            única</p6>
+      </div>
+   </div>
+
+   <div class="price-box">
+      Precio: $270,000
+   </div>
+
+</body>
+
+</html>

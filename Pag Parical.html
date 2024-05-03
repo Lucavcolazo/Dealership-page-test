@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>Elite Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Visual.css" />
+    <link rel="icon" href="logo.png" image />
+</head>
+
+<body>
+    <div class="cargascreen">
+        <img src="carga.png">
+    </div>
+    <div class="general">
+        <div class="menu">
+            <nav class="nav" id="myNav">
+                <!-- logo y nombre -->
+                <img src="icono.png" class="nav_logo" alt="Logo de Elite">
+
+                <h1 class="nav_titulo">Elite Motors</h1>
+
+                <!-- menu -->
+                <a href="#menu" class="nav_target">
+
+                    <!-- x del menu  -->
+
+                    <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee"
+                        stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                        <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                            <animate dur="0.2s" attributeName="d"
+                                values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                                begin="start.begin" />
+                            <animate dur="0.2s" attributeName="d"
+                                values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                                begin="reverse.begin" />
+                        </path>
+                        <rect width="10" height="10" stroke="none">
+                            <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                        </rect>
+                        <rect width="10" height="10" stroke="none">
+                            <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
+                                begin="click" />
+                            <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze"
+                                begin="reverse.begin" />
+                        </rect>
+                    </svg>
+                </a>
+                <!-- enlaces a las partes de la pag -->
+                <div class="nav_links" id="menu">
+                    <a href="Pag Parical.html" class="nav_link">Inicio<span></span></a>
+                    <a href="catalogo.html" target="_blank" class="nav_link">Modelos<span></span></a>
+                    <a href="contactanos.html" target="_blank" class="nav_link">Contáctanos<span></span></a>
+                </div>
+        </div>
+        </a>
+        </nav>
+        <div class="portada">
+            <img src="portada.png" width="100%">
+        </div>
+        <div class="ofertas">
+            <h1>Bienvenido</h1>
+            <h2>Estas en las manos de los mejores en la zona, disfruta al ver nuestro catalogo.</h2>
+            <h3>Te dejamos a continuacion nuestro catalogo.</h3>
+            <p1>Descubra la excelencia en automoción con nuestro exclusivo catálogo de vehículos de alta gama.</p1>
+            <br>
+            <p2>En la de la elegancia y la innovación, cada automóvil es una obra maestra de ingeniería y diseño,</p2>
+            <br>
+            <p3>desde deportivos lujosos hasta SUVs de alto rendimiento, nuestra selección de vehículos de prestigio
+                representa la culminación del lujo y el rendimiento.</p3>
+            <div class="cards">
+                <div class="card">
+                    <div class="img-holder"></div>
+                    <div class="card-content">
+                        <h2>Koenigsegg Agera R</h2>
+                        <p>El Koenigsegg Agera R es la epitome de la ingeniería automotriz, una obra maestra sueca
+                            que
+                            combina potencia y elegancia. Con su motor V8 de 5.0 litros y más de 1,100 caballos de
+                            fuerza,
+                            este superdeportivo alcanza velocidades vertiginosas.</p>
+                        <a href="modelos.html" target="_blank">Mas info</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-holder"></div>
+                    <div class="card-content">
+                        <h2>Porche 911 Gt2 Rs</h2>
+                        <p>El Porsche 911 GT2 RS personifica la perfección alemana en el mundo de los
+                            superdeportivos.
+                            Equipado con un motor bóxer de 3.8 litros y 700 caballos de fuerza, este automóvil
+                            ofrece
+                            una
+                            combinación excepcional de potencia y agilidad.</p>
+                        <a href="modelos.html" target="_blank">Mas info</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-holder"></div>
+                    <div class="card-content">
+                        <h2>Lamborghini Revuelto</h2>
+                        <p>El Lamborghini Revuelto, una obra maestra del lujo y la velocidad, fusiona la elegancia
+                            italiana
+                            con un rendimiento sobrecogedor. Equipado con un motor poderoso y un diseño
+                            aerodinámico, este superdeportivo es una declaración audaz</p>
+                        <a href="modelos.html" target="_blank">Mas info</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img-holder"></div>
+                    <div class="card-content">
+                        <h2>Maserati Levante</h2>
+                        <p>El Maserati Levante es un SUV de lujo que combina la elegancia italiana con un
+                            rendimiento
+                            excepcional. Con su distintivo diseño exterior, interiores lujosos y un motor potente,
+                            el Levante personifica el lujo en movimiento.</p>
+                        <a href="modelos.html" target="_blank">Mas info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrivos">
+            <h1>Proximos arribos a Elite Motors</h1>
+            <h3>En el proximo mes te esperan las nuevas Ferraris que estamos trayendo al pais</h3>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+            </div>
+        </div>
+        <div class="ubicanos">
+            <img src="Mapa.png" width="40%">
+            <h1>Encontranos!</h1>
+            <p>Podes encontrenos en nuestro consecionario ubicado en "Calle Uruguay"</p>
+            <p>sobre colectora al lado de la ruta 131 en Villa Libertador San Martin</p>
+            <p>Te esperamos con los mejores autos del mercado y la mejor atencion</p>
+        </div>
+        <div class="conocenos">
+            <h2>Conocenos</h2>
+            <p>En el corazón de Libertador San Martin, dos amigos con una pasión compartida</p>
+            <p>por los autos de lujo hicieron realidad su sueño: Luca y Patricio, los fundadores de Elite Motors.</p>
+            <h4>Luca, el Visionario Tecnológico</h4>
+            <p>Luca, un ingeniero apasionado por la tecnología, aporta su visión futurista a Elite Motors.</p>
+            <p>Su diseño moderno y sofisticado es evidente en cada rincón de nuestra concesionaria</p>
+            <h4>Patricio, el Maestro de las Relaciones</h4>
+            <p>Patricio, con su carisma inigualable, es la cara amigable y experta de Elite Motors.</p>
+            <p>Su habilidad para conectar con las personas y su pasión por los autos de lujo hacen</p>
+            <p>que cada visita a nuestra concesionaria sea una experiencia única.</p>
+        </div>
+        <div class="final">
+            <h1>Marcas con las que trabajamos</h1>
+            <p1>Te dejamos los links a las paginas oficiales de quienes somos resellers</p1>
+            <br>
+            <p1>para que sepas que lo que compras es de calidad</p1>
+            <ul>
+                <li><a href="https://www.lamborghini.com/en-en" target="_blank">Lamborghini</a></li>
+                <li><a href="https://www.ferrari.com/es-AR" target="_blank">Ferrari</a></li>
+                <li><a href="https://www.koenigsegg.com/" target="_blank">koenigsegg</a></li>
+                <li><a href="https://www.porsche.com/latin-america-es/_argentina_/" target="_blank">Porche</a></li>
+                <li><a href="https://www.maserati.com/ar/es" target="_blank">Maserati</a></li>
+            </ul>
+
+            <h2>Te dejamos nuestras redes</h2>
+
+            <a href="https://twitter.com/home" target="_blank">
+                <img src="x.png" alt="X">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="ig.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="face.png" alt="Facebook">
+            </a>
+        </div>
+    </div>
+    <!-- hacer la pantalla de carga -->
+    <div class="content">
+    </div>
+    <script src="screen.js"></script>
+</body>
+
+</html>

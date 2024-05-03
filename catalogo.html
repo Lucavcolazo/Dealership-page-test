@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>Catalogo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="catalogo.css" />
+    <link rel="icon" href="logo.png" image />
+</head>
+
+<body>
+    <div class="menu">
+        <nav class="nav" id="myNav">
+            <!-- logo y nombre -->
+            <h1 class="nav_titulo">Elite Motors</h1>
+
+            <!-- menu -->
+            <a href="#menu" class="nav_target">
+
+                <!-- x del menu  -->
+
+                <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6"
+                    fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                        <animate dur="0.2s" attributeName="d"
+                            values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                            begin="start.begin" />
+                        <animate dur="0.2s" attributeName="d"
+                            values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                            begin="reverse.begin" />
+                    </path>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                    </rect>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
+                            begin="click" />
+                        <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                    </rect>
+                </svg>
+            </a>
+            <!-- enlaces a las partes de la pag -->
+            <div class="nav_links" id="menu">
+                <a href="Pag Parical.html" class="nav_link">Inicio<span></span></a>
+                <a href="catalogo.html" class="nav_link">Modelos<span></span></a>
+                <a href="contactanos.html" class="nav_link">Contáctanos<span></span></a>
+            </div>
+    </div>
+    <div class="presentacion">
+        <h1>Bienvenido a nuestro catalogo</h1>
+        <p>Aqui podra encontrar los autos que tenemos en nuestro stok</p>
+        <p>Cualquier consulta no dude en preguntar!</p>
+    </div>
+    <hr>
+    <section class="catalog" id="catalog">
+        <div class="content">
+            <div class="card-wrapper">
+                <div class="card-item">
+                    <img src="macan.png" alt="Car" />
+                    <div class="card-content">
+                        <h3>Porsche Macan</h3>
+                        <p>
+                            La Porsche Macan es un SUV compacto que ofrece un manejo ágil y motores potentes.
+                            Es una opción para aquellos que buscan un equilibrio entre la practicidad de un SUV.
+                            La mejor suv del segmento lista para vos, buscala
+                        </p>
+                        <a href="macan.html">
+                        <button type="button">Consultar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="Urus.avif" alt="Car" />
+                    <div class="card-content">
+                        <h3>Lamborghini Urus</h3>
+                        <p>
+                            La Lamborghini Urus es un SUV de lujo que no escatima en potencia, Combina la comodidad y
+                            versatilidad de un SUV con el estilo y la velocidad característicos de Lamborghini, creando
+                            un vehículo único en su clase
+                        </p>
+                        <button type="button">Sin Stock</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="maserati1.htm" alt="Car" />
+                    <div class="card-content">
+                        <h3>Maserati Levante</h3>
+                        <p>
+                            El Maserati Levante es un SUV de lujo que combina el elegante diseño italiano reconocido de
+                            la marca. Esta ofrece un equilibrio excepcional entre comodidad y rendimiento. Es una opción
+                            que atrae a quienes buscan la elegancia y la comodidad
+                        </p>
+                        <a href="maserati.html">
+                        <button type="button">Consultar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="porche1.jpg" alt="Car" />
+                    <div class="card-content">
+                        <h3>Ponche 911 Gt2 Rs</h3>
+                        <p>
+                            El Porsche 911 GT2 RS es un icónico deportivo de la marca alemana. Es un automóvil que
+                            combina a la perfección el lujo y la alta velocidad. Es conocido por su agilidad en pista y
+                            su capacidad de aceleración
+                        </p>
+                        <a href="911.html">
+                        <button type="button">Consultar</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="lamborguini1.webp" alt="Car" />
+                    <div class="card-content">
+                        <h3>Lamborghini Revoltoso</h3>
+                        <p>
+                            El Lamborghini Revuelto es un automóvil que combina el lujo y la
+                            potencia de dicha marca, con un diseño revolucionario. Parece que no existe en la realidad,
+                            ya que este es un automovil perfecto para lo estusiastas
+                        </p>
+                        <button type="button">Sin Stock</button>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="koenigsegg1.jpg" alt="Car" width="100%" />
+                    <div class="card-content">
+                        <h3>Koenigsegg Agera R</h3>
+                        <p>
+                            El Koenigsegg Agera R es un superdeportivo sueco de renombre, famoso por
+                            su impresionante potencia y velocidad. Es una obra maestra de
+                            la ingeniería automovilística que encarna la búsqueda de vel
+                        </p>
+                        <button type="button">Sin Stock</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+    <div class="final">
+        <h1>Marcas con las que trabajamos</h1>
+        <p1>Te dejamos los links a las paginas oficiales de quienes somos resellers</p1>
+        <br>
+        <p1>para que sepas que lo que compras es de calidad</p1>
+        <ul>
+            <li><a href="https://www.lamborghini.com/en-en" target="_blank">Lamborghini</a></li>
+            <li><a href="https://www.ferrari.com/es-AR" target="_blank">Ferrari</a></li>
+            <li><a href="https://www.koenigsegg.com/" target="_blank">koenigsegg</a></li>
+            <li><a href="https://www.porsche.com/latin-america-es/_argentina_/" target="_blank">Porche</a></li>
+            <li><a href="https://www.maserati.com/ar/es" target="_blank">Maserati</a></li>
+        </ul>
+
+        <h2>Te dejamos nuestras redes</h2>
+
+        <a href="https://twitter.com/home" target="_blank">
+            <img src="x.png" alt="X">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="ig.png" alt="Instagram">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="face.png" alt="Facebook">
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>Formulario de contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="contactanos.css">
+    <link rel="icon" href="logo.png" image />
+</head>
+
+<body>
+    <div class="menu">
+        <nav class="nav" id="myNav">
+            <!-- logo y nombre -->
+            <h1 class="nav_titulo">Elite Motors</h1>
+
+            <!-- menu -->
+            <a href="#menu" class="nav_target">
+
+                <!-- x del menu  -->
+
+                <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#eee" stroke-width=".6"
+                    fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                        <animate dur="0.2s" attributeName="d"
+                            values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                            begin="start.begin" />
+                        <animate dur="0.2s" attributeName="d"
+                            values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                            begin="reverse.begin" />
+                    </path>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                    </rect>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"
+                            begin="click" />
+                        <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                    </rect>
+                </svg>
+            </a>
+            <!-- enlaces a las partes de la pag -->
+            <div class="nav_links" id="menu">
+                <a href="Pag Parical.html" class="nav_link">Inicio<span></span></a>
+                <a href="catalogo.html" class="nav_link">Modelos<span></span></a>
+                <a href="contactanos.html" class="nav_link">Contáctanos<span></span></a>
+            </div>
+    </div>
+    <div class="contact-form">
+        <div class="contact-info">
+            <h1>Contacto</h1>
+            <p>¡Estamos aquí para ayudarte! Por favor, completa el formulario y te responderemos lo antes posible.</p>
+        </div>
+        <div class="contact-form-container">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido<span class="required">*</span></label>
+                    <input type="text" name="nombre" id="nombre" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" >
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="pais">País<span class="required">*</span></label>
+                    <select name="pais" id="pais" >
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario<span class="required">*</span></label>
+                    <textarea name="comentario" id="comentario" ></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección<span class="required">*</span></label>
+                    <input type="text" name="direccion" id="direccion" >
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento<span class="required">*</span></label>
+                    <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <video autoplay loop muted playsinline id="video">
+        <source src="porchevideo.mp4" type="video/mp4">
+    </video>
+    <script src="contactanos.js"></script>
+</body>
+
+</html>
